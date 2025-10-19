@@ -100,12 +100,17 @@ const Index = () => {
               </h1>
               <div className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
             </div>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
+              Официальные смартфоны с гарантией. Доставка по всей России.
+            </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold text-lg px-8 shadow-[0_0_20px_rgba(0,240,255,0.5)]">
                 <Icon name="ShoppingCart" className="mr-2" size={20} />
+                Купить телефон
               </Button>
               <Button size="lg" variant="outline" className="border-primary/30 hover:bg-primary/10 font-semibold text-lg px-8">
                 <Icon name="Shield" className="mr-2" size={20} />
+                Гарантия 2 года
               </Button>
             </div>
           </div>
@@ -113,6 +118,7 @@ const Index = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16">
+        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Наши смартфоны</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <Card key={product.id} className="bg-card/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 group overflow-hidden border-primary/30">
@@ -149,12 +155,13 @@ const Index = () => {
                 
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Icon name="MessageSquare" size={16} />
-                  <span>{product.reviews.length}</span>
+                  <span>{product.reviews.length} отзывов</span>
                 </div>
                 
                 <div className="flex gap-2">
                   <Button className="flex-1 bg-primary hover:bg-primary/90 text-black font-semibold">
                     <Icon name="ShoppingCart" className="mr-2" size={18} />
+                    Купить
                   </Button>
                   <Dialog>
                     <DialogTrigger asChild>
@@ -168,7 +175,7 @@ const Index = () => {
                     </DialogTrigger>
                     <DialogContent className="max-w-2xl bg-card border-primary/30 max-h-[80vh] overflow-y-auto">
                       <DialogHeader>
-                        <DialogTitle className="text-2xl">{selectedProduct?.name}</DialogTitle>
+                        <DialogTitle className="text-2xl">Отзывы: {selectedProduct?.name}</DialogTitle>
                       </DialogHeader>
                       
                       <div className="space-y-6">
@@ -202,6 +209,7 @@ const Index = () => {
                         ))}
                         
                         <div className="space-y-4 pt-4">
+                          <h3 className="font-semibold text-lg">Оставить отзыв</h3>
                           <Input
                             placeholder="Ваше имя"
                             value={newReview.author}
@@ -223,12 +231,14 @@ const Index = () => {
                             ))}
                           </div>
                           <Textarea
+                            placeholder="Ваш отзыв о товаре"
                             value={newReview.text}
                             onChange={(e) => setNewReview({ ...newReview, text: e.target.value })}
                             rows={4}
                           />
                           <Button onClick={handleAddReview} className="w-full bg-primary hover:bg-primary/90 text-black">
-                            <Icon name="Send" size={18} />
+                            <Icon name="Send" className="mr-2" size={18} />
+                            Отправить отзыв
                           </Button>
                         </div>
                       </div>
@@ -242,30 +252,38 @@ const Index = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16">
+        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Наши преимущества</h2>
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="bg-card/50 backdrop-blur-sm text-center p-6 border-primary/30">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
                 <Icon name="Shield" size={32} className="text-primary" />
               </div>
+              <h3 className="text-xl font-semibold mb-2">Гарантия 2 года</h3>
+              <p className="text-muted-foreground">Официальная гарантия на все устройства</p>
             </Card>
             
             <Card className="bg-card/50 backdrop-blur-sm text-center p-6 border-primary/30">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
                 <Icon name="Repeat" size={32} className="text-primary" />
               </div>
+              <h3 className="text-xl font-semibold mb-2">Обмен 14 дней</h3>
+              <p className="text-muted-foreground">Не подошёл? Обменяем без вопросов</p>
             </Card>
             
             <Card className="bg-card/50 backdrop-blur-sm text-center p-6 border-primary/30">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
                 <Icon name="CheckCircle" size={32} className="text-primary" />
               </div>
+              <h3 className="text-xl font-semibold mb-2">100% Оригинал</h3>
+              <p className="text-muted-foreground">Только сертифицированная техника</p>
             </Card>
           </div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-16">
+        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Контакты</h2>
         <div className="max-w-2xl mx-auto">
           <Card className="bg-card/50 backdrop-blur-sm p-8 border-primary/30">
             <div className="space-y-6">
@@ -273,11 +291,19 @@ const Index = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
                   <Icon name="Phone" size={24} className="text-primary" />
                 </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Телефон</p>
+                  <p className="text-lg font-semibold">+7 (495) 123-45-67</p>
+                </div>
               </div>
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
                   <Icon name="Mail" size={24} className="text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Email</p>
+                  <p className="text-lg font-semibold">info@grandmobile.ru</p>
                 </div>
               </div>
               
@@ -285,11 +311,19 @@ const Index = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
                   <Icon name="MapPin" size={24} className="text-primary" />
                 </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Адрес</p>
+                  <p className="text-lg font-semibold">Москва, ул. Тверская, д. 1</p>
+                </div>
               </div>
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
                   <Icon name="Clock" size={24} className="text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Режим работы</p>
+                  <p className="text-lg font-semibold">Пн-Вс: 10:00 - 21:00</p>
                 </div>
               </div>
             </div>
