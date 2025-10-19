@@ -1,8 +1,21 @@
+import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
+  const [showForm, setShowForm] = useState(false);
+
+  const scrollToForm = () => {
+    setShowForm(true);
+    setTimeout(() => {
+      document.getElementById('form-section')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
     <div className="min-h-screen bg-black">
       <div className="relative overflow-hidden">
@@ -21,7 +34,11 @@ const Index = () => {
               <div className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
             </div>
 
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold text-lg px-8 shadow-[0_0_20px_rgba(0,240,255,0.5)] mt-6">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-black font-semibold text-lg px-8 shadow-[0_0_20px_rgba(0,240,255,0.5)] mt-6"
+              onClick={scrollToForm}
+            >
               <Icon name="Plus" className="mr-2" size={20} />
               Опубликовать объявление
             </Button>
@@ -119,6 +136,52 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      {showForm && (
+        <div id="form-section" className="container mx-auto px-4 py-16">
+          <h2 className="text-4xl font-bold text-center mb-12 text-primary">Создать объявление</h2>
+          <div className="max-w-2xl mx-auto">
+            <Card className="bg-card/50 backdrop-blur-sm p-8 border-primary/30">
+              <div className="space-y-6">
+                <div>
+                  <Label htmlFor="nickname">Ваш ник</Label>
+                  <Input id="nickname" placeholder="Введите ник" className="mt-2" />
+                </div>
+
+                <div>
+                  <Label htmlFor="server">Номер сервера</Label>
+                  <Input id="server" type="number" placeholder="От 1 до 23" className="mt-2" />
+                </div>
+
+                <div>
+                  <Label htmlFor="items">Что обмениваете</Label>
+                  <Textarea 
+                    id="items" 
+                    placeholder="Например: Дом в Арзамасе + Кв в элит апартаментах" 
+                    className="mt-2"
+                    rows={3}
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="target-server">На какой сервер ищете обмен</Label>
+                  <Input id="target-server" type="number" placeholder="От 1 до 23" className="mt-2" />
+                </div>
+
+                <div>
+                  <Label htmlFor="contact">Контакт (никнейм в Discord/Telegram)</Label>
+                  <Input id="contact" placeholder="@ваш_ник" className="mt-2" />
+                </div>
+
+                <Button className="w-full bg-primary hover:bg-primary/90 text-black font-semibold">
+                  <Icon name="Send" className="mr-2" size={18} />
+                  Опубликовать
+                </Button>
+              </div>
+            </Card>
+          </div>
+        </div>
+      )}
 
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-center mb-12 text-primary">Контакты</h2>
