@@ -9,11 +9,8 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   const [showForm, setShowForm] = useState(false);
 
-  const scrollToForm = () => {
-    setShowForm(true);
-    setTimeout(() => {
-      document.getElementById('form-section')?.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
+  const handleShowForm = () => {
+    setShowForm(!showForm);
   };
 
   return (
@@ -37,7 +34,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-black font-semibold text-lg px-8 shadow-[0_0_20px_rgba(0,240,255,0.5)] mt-6"
-              onClick={scrollToForm}
+              onClick={handleShowForm}
             >
               <Icon name="Plus" className="mr-2" size={20} />
               Опубликовать объявление
