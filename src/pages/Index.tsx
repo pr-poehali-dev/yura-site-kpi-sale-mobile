@@ -13,7 +13,7 @@ const Index = () => {
           <div className="text-center space-y-6 animate-fade-in">
             <div className="inline-block">
               <h1 className="text-6xl md:text-8xl font-black text-primary drop-shadow-[0_0_30px_rgba(0,240,255,0.5)] mb-2 tracking-tight">
-                GRAND MOBILE
+                ОБМЕН ИМУЩЕСТВОМ МЕЖДУ СЕРВЕРАМИ
               </h1>
               <div className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
             </div>
