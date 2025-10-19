@@ -28,8 +28,8 @@ const Index = () => {
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-center mb-12 text-primary">Активные обмены</h2>
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-6">
-<Card className="bg-card/50 backdrop-blur-sm p-6 border-primary/30">
+          <div className="grid md:grid-cols-1 gap-6">
+            <Card className="bg-card/50 backdrop-blur-sm p-6 border-primary/30">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                   <Icon name="User" size={24} className="text-primary" />
@@ -44,6 +44,66 @@ const Index = () => {
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 3</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm p-6 border-primary/30">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <Icon name="User" size={24} className="text-primary" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-lg font-semibold">maxpro_gaming</h3>
+                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 15</span>
+                  </div>
+                  <p className="text-muted-foreground mb-3">Редкий скин + 5000 алмазов + Легендарный меч</p>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Icon name="ArrowRightLeft" size={16} className="text-primary" />
+                    <span className="text-muted-foreground">Ищет обмен на</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 8</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm p-6 border-primary/30">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <Icon name="User" size={24} className="text-primary" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-lg font-semibold">lina_builder</h3>
+                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 3</span>
+                  </div>
+                  <p className="text-muted-foreground mb-3">Замок на вершине горы + 3 земельных участка</p>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Icon name="ArrowRightLeft" size={16} className="text-primary" />
+                    <span className="text-muted-foreground">Ищет обмен на</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 27</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm p-6 border-primary/30">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <Icon name="User" size={24} className="text-primary" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-lg font-semibold">dark_trader99</h3>
+                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 42</span>
+                  </div>
+                  <p className="text-muted-foreground mb-3">Полный набор эндер-брони + Стэк зелий невидимости</p>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Icon name="ArrowRightLeft" size={16} className="text-primary" />
+                    <span className="text-muted-foreground">Ищет обмен на</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 1</span>
                   </div>
                 </div>
               </div>
