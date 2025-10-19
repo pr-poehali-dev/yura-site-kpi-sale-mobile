@@ -18,7 +18,7 @@ const Index = () => {
               <div className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
             </div>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-              Официальные смартфоны с гарантией. Доставка по всей России.
+              Продажа мобильных телефонов с гарантией. Доставка по всей России.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold text-lg px-8 shadow-[0_0_20px_rgba(0,240,255,0.5)]">
