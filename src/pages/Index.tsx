@@ -21,6 +21,10 @@ const Index = () => {
               <div className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
             </div>
 
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold text-lg px-8 shadow-[0_0_20px_rgba(0,240,255,0.5)] mt-6">
+              <Icon name="Plus" className="mr-2" size={20} />
+              Опубликовать объявление
+            </Button>
           </div>
         </div>
       </div>
