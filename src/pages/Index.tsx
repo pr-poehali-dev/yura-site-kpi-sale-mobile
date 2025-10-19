@@ -26,31 +26,27 @@ const Index = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Наши преимущества</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Активные обмены</h2>
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="bg-card/50 backdrop-blur-sm text-center p-6 border-primary/30">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                <Icon name="Shield" size={32} className="text-primary" />
+<Card className="bg-card/50 backdrop-blur-sm p-6 border-primary/30">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <Icon name="User" size={24} className="text-primary" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-lg font-semibold">artem kisilakov</h3>
+                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 27</span>
+                  </div>
+                  <p className="text-muted-foreground mb-3">Дом в Арзамасе + Кв в элит апартаментах</p>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Icon name="ArrowRightLeft" size={16} className="text-primary" />
+                    <span className="text-muted-foreground">Ищет обмен на</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 3</span>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Гарантия 2 года</h3>
-              <p className="text-muted-foreground">Официальная гарантия на все устройства</p>
-            </Card>
-            
-            <Card className="bg-card/50 backdrop-blur-sm text-center p-6 border-primary/30">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                <Icon name="Repeat" size={32} className="text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Обмен 14 дней</h3>
-              <p className="text-muted-foreground">Не подошёл? Обменяем без вопросов</p>
-            </Card>
-            
-            <Card className="bg-card/50 backdrop-blur-sm text-center p-6 border-primary/30">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                <Icon name="CheckCircle" size={32} className="text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">100% Оригинал</h3>
-              <p className="text-muted-foreground">Только сертифицированная техника</p>
             </Card>
           </div>
         </div>
