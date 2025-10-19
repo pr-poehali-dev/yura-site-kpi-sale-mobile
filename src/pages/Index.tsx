@@ -99,7 +99,7 @@ const Index = () => {
                     <h3 className="text-lg font-semibold">dark_trader99</h3>
                     <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 21</span>
                   </div>
-                  <p className="text-muted-foreground mb-3">Полный набор эндер-брони + Стэк зелий невидимости</p>
+                  <p className="text-muted-foreground mb-3">Дом в Новом поселке + BMW M5 F90 FT 2</p>
                   <div className="flex items-center gap-2 text-sm">
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
