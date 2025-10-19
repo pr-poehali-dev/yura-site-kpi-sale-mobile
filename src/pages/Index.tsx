@@ -40,11 +40,12 @@ const Index = () => {
                     <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 12</span>
                   </div>
                   <p className="text-muted-foreground mb-3">Дом в Арзамасе + Кв в элит апартаментах</p>
-                  <div className="flex items-center gap-2 text-sm">
+                  <div className="flex items-center gap-2 text-sm mb-3">
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 3</span>
                   </div>
+                  <p className="text-xs text-muted-foreground italic">Связь только знаком @ngvoli</p>
                 </div>
               </div>
             </Card>
@@ -60,11 +61,12 @@ const Index = () => {
                     <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 7</span>
                   </div>
                   <p className="text-muted-foreground mb-3">Дом в Южном + Машина на 56кк + Крылья ангела №1</p>
-                  <div className="flex items-center gap-2 text-sm">
+                  <div className="flex items-center gap-2 text-sm mb-3">
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 19</span>
                   </div>
+                  <p className="text-xs text-muted-foreground italic">Связь только знаком @pro_trader</p>
                 </div>
               </div>
             </Card>
@@ -80,11 +82,12 @@ const Index = () => {
                     <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 3</span>
                   </div>
                   <p className="text-muted-foreground mb-3">Кв в Южном + Машины на 20кк + Аксессуары</p>
-                  <div className="flex items-center gap-2 text-sm">
+                  <div className="flex items-center gap-2 text-sm mb-3">
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 27</span>
                   </div>
+                  <p className="text-xs text-muted-foreground italic">Связь только знаком @lina_deals</p>
                 </div>
               </div>
             </Card>
@@ -100,11 +103,12 @@ const Index = () => {
                     <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 21</span>
                   </div>
                   <p className="text-muted-foreground mb-3">Дом в Новом поселке + BMW M5 F90 FT 2</p>
-                  <div className="flex items-center gap-2 text-sm">
+                  <div className="flex items-center gap-2 text-sm mb-3">
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 15</span>
                   </div>
+                  <p className="text-xs text-muted-foreground italic">Связь только знаком @dark_exchange</p>
                 </div>
               </div>
             </Card>
