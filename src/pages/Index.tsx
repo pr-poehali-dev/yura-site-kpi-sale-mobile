@@ -79,7 +79,7 @@ const Index = () => {
                     <h3 className="text-lg font-semibold">lina_builder</h3>
                     <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 3</span>
                   </div>
-                  <p className="text-muted-foreground mb-3">Замок на вершине горы + 3 земельных участка</p>
+                  <p className="text-muted-foreground mb-3">Кв в Южном + Машины на 20кк + Аксессуары</p>
                   <div className="flex items-center gap-2 text-sm">
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
