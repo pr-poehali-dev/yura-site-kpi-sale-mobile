@@ -17,16 +17,7 @@ const Index = () => {
               </h1>
               <div className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
             </div>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold text-lg px-8 shadow-[0_0_20px_rgba(0,240,255,0.5)]">
-                <Icon name="ShoppingCart" className="mr-2" size={20} />
-                Купить телефон
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary/30 hover:bg-primary/10 font-semibold text-lg px-8">
-                <Icon name="Shield" className="mr-2" size={20} />
-                Гарантия 2 года
-              </Button>
-            </div>
+
           </div>
         </div>
       </div>
