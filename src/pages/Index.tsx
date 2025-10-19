@@ -59,7 +59,7 @@ const Index = () => {
                     <h3 className="text-lg font-semibold">maxpro_gaming</h3>
                     <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 7</span>
                   </div>
-                  <p className="text-muted-foreground mb-3">Редкий скин + 5000 алмазов + Легендарный меч</p>
+                  <p className="text-muted-foreground mb-3">Дом в Южном + Машина на 56кк + Крылья ангела №1</p>
                   <div className="flex items-center gap-2 text-sm">
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
