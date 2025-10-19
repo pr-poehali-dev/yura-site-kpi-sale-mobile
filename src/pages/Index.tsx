@@ -26,7 +26,7 @@ const Index = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Активные обмены</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Последние обмены на серверах от 1 до 23</h2>
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-1 gap-6">
             <Card className="bg-card/50 backdrop-blur-sm p-6 border-primary/30">
@@ -37,7 +37,7 @@ const Index = () => {
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-2">
                     <h3 className="text-lg font-semibold">artem kisilakov</h3>
-                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 27</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 12</span>
                   </div>
                   <p className="text-muted-foreground mb-3">Дом в Арзамасе + Кв в элит апартаментах</p>
                   <div className="flex items-center gap-2 text-sm">
@@ -57,13 +57,13 @@ const Index = () => {
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-2">
                     <h3 className="text-lg font-semibold">maxpro_gaming</h3>
-                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 15</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 7</span>
                   </div>
                   <p className="text-muted-foreground mb-3">Редкий скин + 5000 алмазов + Легендарный меч</p>
                   <div className="flex items-center gap-2 text-sm">
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
-                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 8</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 19</span>
                   </div>
                 </div>
               </div>
@@ -97,13 +97,13 @@ const Index = () => {
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-2">
                     <h3 className="text-lg font-semibold">dark_trader99</h3>
-                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 42</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary">Сервер 21</span>
                   </div>
                   <p className="text-muted-foreground mb-3">Полный набор эндер-брони + Стэк зелий невидимости</p>
                   <div className="flex items-center gap-2 text-sm">
                     <Icon name="ArrowRightLeft" size={16} className="text-primary" />
                     <span className="text-muted-foreground">Ищет обмен на</span>
-                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 1</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 15</span>
                   </div>
                 </div>
               </div>
