@@ -45,7 +45,7 @@ const Index = () => {
                     <span className="text-muted-foreground">Ищет обмен на</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 3</span>
                   </div>
-                  <p className="text-xs text-muted-foreground italic">Связь только знаком @ngvoli</p>
+                  <p className="text-xs text-muted-foreground italic">@ngvoli</p>
                 </div>
               </div>
             </Card>
@@ -66,7 +66,7 @@ const Index = () => {
                     <span className="text-muted-foreground">Ищет обмен на</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 19</span>
                   </div>
-                  <p className="text-xs text-muted-foreground italic">Связь только знаком @pro_trader</p>
+                  <p className="text-xs text-muted-foreground italic">@pro_trader</p>
                 </div>
               </div>
             </Card>
@@ -87,7 +87,7 @@ const Index = () => {
                     <span className="text-muted-foreground">Ищет обмен на</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 27</span>
                   </div>
-                  <p className="text-xs text-muted-foreground italic">Связь только знаком @lina_deals</p>
+                  <p className="text-xs text-muted-foreground italic">@lina_deals</p>
                 </div>
               </div>
             </Card>
@@ -108,7 +108,7 @@ const Index = () => {
                     <span className="text-muted-foreground">Ищет обмен на</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-secondary">Сервер 15</span>
                   </div>
-                  <p className="text-xs text-muted-foreground italic">Связь только знаком @dark_exchange</p>
+                  <p className="text-xs text-muted-foreground italic">@dark_exchange</p>
                 </div>
               </div>
             </Card>
